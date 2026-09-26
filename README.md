@@ -38,3 +38,8 @@ The Tableau dashboard is structured around three primary analytical views:
 1. Review the backend query logic in [`churn_logic.sql`](./churn_logic.sql).
 2. Explore the reference schemas via the included CSV files.
 3. Check out the project highlights and business insights documented above!
+
+---
+
+## 🖼️ Dashboard Preview
+![Dashboard Preview](./Dashboard.png)
