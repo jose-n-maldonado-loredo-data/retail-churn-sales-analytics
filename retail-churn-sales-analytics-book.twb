@@ -1,0 +1,2009 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='5c2e03547f09355fac569297e2314bc534c3bd664c355dc31084e313552f82fc' _.fcp.WorkbookFingerprinting.true...creator-author-id='5c2e03547f09355fac569297e2314bc534c3bd664c355dc31084e313552f82fc' _.fcp.WorkbookFingerprinting.true...creator-license-type='free' _.fcp.WorkbookFingerprinting.true...creator-machine-id='0eee2dee596719563bd57f681ae00b6152afa9058dddeb113d90b181427711e1' _.fcp.WorkbookFingerprinting.true...license-type='free' _.fcp.WorkbookFingerprinting.true...machine-id='0eee2dee596719563bd57f681ae00b6152afa9058dddeb113d90b181427711e1' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='customer_master.csv+ (Multiple Connections)' inline='true' name='federated.0s818571o7bvya13k7rnt0b9wz3j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='customer_master' name='textscan.1llo8230gk0n9j10g5zmu1nqfbno'>
+            <connection class='textscan' directory='C:/Users/elect/Desktop/DATA PROJECT 2 TABLEAU' filename='customer_master.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='ecommerce_sales_customer_analytics_150k' name='textscan.0v5k92y1mssukt16v6kxp0mtdse4'>
+            <connection class='textscan' directory='C:/Users/elect/Desktop/DATA PROJECT 2 TABLEAU' filename='ecommerce_sales_customer_analytics_150k.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1llo8230gk0n9j10g5zmu1nqfbno' name='customer_master.csv' table='[customer_master#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='customer_id' ordinal='0' />
+              <column datatype='string' name='customer_name' ordinal='1' />
+              <column datatype='integer' name='customer_age' ordinal='2' />
+              <column datatype='string' name='gender' ordinal='3' />
+              <column datatype='string' name='customer_segment' ordinal='4' />
+              <column datatype='string' name='customer_city' ordinal='5' />
+              <column datatype='string' name='customer_state' ordinal='6' />
+              <column datatype='string' name='customer_country' ordinal='7' />
+              <column datatype='string' name='region' ordinal='8' />
+              <column datatype='integer' name='customer_postal_code' ordinal='9' />
+              <column datatype='real' name='customer_acquisition_cost' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0v5k92y1mssukt16v6kxp0mtdse4' name='ecommerce_sales_customer_analytics_150k.csv' table='[ecommerce_sales_customer_analytics_150k#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='order_id' ordinal='0' />
+              <column datatype='date' name='order_date' ordinal='1' />
+              <column datatype='datetime' name='order_time' ordinal='2' />
+              <column datatype='string' name='order_status' ordinal='3' />
+              <column datatype='string' name='sales_channel' ordinal='4' />
+              <column datatype='string' name='customer_id' ordinal='5' />
+              <column datatype='string' name='customer_name' ordinal='6' />
+              <column datatype='integer' name='customer_age' ordinal='7' />
+              <column datatype='string' name='gender' ordinal='8' />
+              <column datatype='string' name='customer_segment' ordinal='9' />
+              <column datatype='string' name='customer_type' ordinal='10' />
+              <column datatype='string' name='customer_city' ordinal='11' />
+              <column datatype='string' name='customer_state' ordinal='12' />
+              <column datatype='string' name='customer_country' ordinal='13' />
+              <column datatype='string' name='region' ordinal='14' />
+              <column datatype='integer' name='customer_postal_code' ordinal='15' />
+              <column datatype='string' name='payment_method' ordinal='16' />
+              <column datatype='string' name='payment_status' ordinal='17' />
+              <column datatype='string' name='currency' ordinal='18' />
+              <column datatype='string' name='shipping_method' ordinal='19' />
+              <column datatype='string' name='warehouse' ordinal='20' />
+              <column datatype='real' name='delivery_days' ordinal='21' />
+              <column datatype='real' name='estimated_delivery_days' ordinal='22' />
+              <column datatype='string' name='delivery_status' ordinal='23' />
+              <column datatype='string' name='return_status' ordinal='24' />
+              <column datatype='string' name='return_reason' ordinal='25' />
+              <column datatype='real' name='customer_rating' ordinal='26' />
+              <column datatype='string' name='review_sentiment' ordinal='27' />
+              <column datatype='string' name='customer_review' ordinal='28' />
+              <column datatype='string' name='marketing_channel' ordinal='29' />
+              <column datatype='string' name='campaign_name' ordinal='30' />
+              <column datatype='string' name='coupon_code' ordinal='31' />
+              <column datatype='integer' name='loyalty_points_earned' ordinal='32' />
+              <column datatype='integer' name='loyalty_points_redeemed' ordinal='33' />
+              <column datatype='integer' name='quantity' ordinal='34' />
+              <column datatype='real' name='gross_sales' ordinal='35' />
+              <column datatype='real' name='discount_amount' ordinal='36' />
+              <column datatype='real' name='tax_amount' ordinal='37' />
+              <column datatype='real' name='shipping_cost' ordinal='38' />
+              <column datatype='real' name='net_sales' ordinal='39' />
+              <column datatype='real' name='product_cost' ordinal='40' />
+              <column datatype='real' name='profit' ordinal='41' />
+              <column datatype='real' name='profit_margin_percentage' ordinal='42' />
+              <column datatype='real' name='customer_lifetime_value' ordinal='43' />
+              <column datatype='boolean' name='is_repeat_customer' ordinal='44' />
+              <column datatype='integer' name='customer_order_count' ordinal='45' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[campaign_name]' value='[ecommerce_sales_customer_analytics_150k.csv].[campaign_name]' />
+          <map key='[coupon_code]' value='[ecommerce_sales_customer_analytics_150k.csv].[coupon_code]' />
+          <map key='[currency]' value='[ecommerce_sales_customer_analytics_150k.csv].[currency]' />
+          <map key='[customer_acquisition_cost]' value='[customer_master.csv].[customer_acquisition_cost]' />
+          <map key='[customer_age (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_age]' />
+          <map key='[customer_age]' value='[customer_master.csv].[customer_age]' />
+          <map key='[customer_city (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_city]' />
+          <map key='[customer_city]' value='[customer_master.csv].[customer_city]' />
+          <map key='[customer_country (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_country]' />
+          <map key='[customer_country]' value='[customer_master.csv].[customer_country]' />
+          <map key='[customer_id (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_id]' />
+          <map key='[customer_id]' value='[customer_master.csv].[customer_id]' />
+          <map key='[customer_lifetime_value]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_lifetime_value]' />
+          <map key='[customer_name (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_name]' />
+          <map key='[customer_name]' value='[customer_master.csv].[customer_name]' />
+          <map key='[customer_order_count]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_order_count]' />
+          <map key='[customer_postal_code (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_postal_code]' />
+          <map key='[customer_postal_code]' value='[customer_master.csv].[customer_postal_code]' />
+          <map key='[customer_rating]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_rating]' />
+          <map key='[customer_review]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_review]' />
+          <map key='[customer_segment (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_segment]' />
+          <map key='[customer_segment]' value='[customer_master.csv].[customer_segment]' />
+          <map key='[customer_state (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_state]' />
+          <map key='[customer_state]' value='[customer_master.csv].[customer_state]' />
+          <map key='[customer_type]' value='[ecommerce_sales_customer_analytics_150k.csv].[customer_type]' />
+          <map key='[delivery_days]' value='[ecommerce_sales_customer_analytics_150k.csv].[delivery_days]' />
+          <map key='[delivery_status]' value='[ecommerce_sales_customer_analytics_150k.csv].[delivery_status]' />
+          <map key='[discount_amount]' value='[ecommerce_sales_customer_analytics_150k.csv].[discount_amount]' />
+          <map key='[estimated_delivery_days]' value='[ecommerce_sales_customer_analytics_150k.csv].[estimated_delivery_days]' />
+          <map key='[gender (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[gender]' />
+          <map key='[gender]' value='[customer_master.csv].[gender]' />
+          <map key='[gross_sales]' value='[ecommerce_sales_customer_analytics_150k.csv].[gross_sales]' />
+          <map key='[is_repeat_customer]' value='[ecommerce_sales_customer_analytics_150k.csv].[is_repeat_customer]' />
+          <map key='[loyalty_points_earned]' value='[ecommerce_sales_customer_analytics_150k.csv].[loyalty_points_earned]' />
+          <map key='[loyalty_points_redeemed]' value='[ecommerce_sales_customer_analytics_150k.csv].[loyalty_points_redeemed]' />
+          <map key='[marketing_channel]' value='[ecommerce_sales_customer_analytics_150k.csv].[marketing_channel]' />
+          <map key='[net_sales]' value='[ecommerce_sales_customer_analytics_150k.csv].[net_sales]' />
+          <map key='[order_date]' value='[ecommerce_sales_customer_analytics_150k.csv].[order_date]' />
+          <map key='[order_id]' value='[ecommerce_sales_customer_analytics_150k.csv].[order_id]' />
+          <map key='[order_status]' value='[ecommerce_sales_customer_analytics_150k.csv].[order_status]' />
+          <map key='[order_time]' value='[ecommerce_sales_customer_analytics_150k.csv].[order_time]' />
+          <map key='[payment_method]' value='[ecommerce_sales_customer_analytics_150k.csv].[payment_method]' />
+          <map key='[payment_status]' value='[ecommerce_sales_customer_analytics_150k.csv].[payment_status]' />
+          <map key='[product_cost]' value='[ecommerce_sales_customer_analytics_150k.csv].[product_cost]' />
+          <map key='[profit]' value='[ecommerce_sales_customer_analytics_150k.csv].[profit]' />
+          <map key='[profit_margin_percentage]' value='[ecommerce_sales_customer_analytics_150k.csv].[profit_margin_percentage]' />
+          <map key='[quantity]' value='[ecommerce_sales_customer_analytics_150k.csv].[quantity]' />
+          <map key='[region (ecommerce_sales_customer_analytics_150k.csv)]' value='[ecommerce_sales_customer_analytics_150k.csv].[region]' />
+          <map key='[region]' value='[customer_master.csv].[region]' />
+          <map key='[return_reason]' value='[ecommerce_sales_customer_analytics_150k.csv].[return_reason]' />
+          <map key='[return_status]' value='[ecommerce_sales_customer_analytics_150k.csv].[return_status]' />
+          <map key='[review_sentiment]' value='[ecommerce_sales_customer_analytics_150k.csv].[review_sentiment]' />
+          <map key='[sales_channel]' value='[ecommerce_sales_customer_analytics_150k.csv].[sales_channel]' />
+          <map key='[shipping_cost]' value='[ecommerce_sales_customer_analytics_150k.csv].[shipping_cost]' />
+          <map key='[shipping_method]' value='[ecommerce_sales_customer_analytics_150k.csv].[shipping_method]' />
+          <map key='[tax_amount]' value='[ecommerce_sales_customer_analytics_150k.csv].[tax_amount]' />
+          <map key='[warehouse]' value='[ecommerce_sales_customer_analytics_150k.csv].[warehouse]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_name]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_age]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_segment]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_segment</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_city]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_city</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_country]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_postal_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_postal_code]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_postal_code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_acquisition_cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_acquisition_cost]</local-name>
+            <parent-name>[customer_master.csv]</parent-name>
+            <remote-alias>customer_acquisition_cost</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_id]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>order_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[order_date]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>order_date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[order_time]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>order_time</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_status]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>order_status</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sales_channel]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>sales_channel</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_name (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_name</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_age (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_age</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_segment (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_segment</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_type]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_type</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_city (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_city</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_state (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_state</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_country (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_country</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_postal_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_postal_code (ecommerce_sales_customer_analytics_150k.csv)]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_postal_code</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_method]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>payment_method</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_status]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>payment_status</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[currency]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>currency</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shipping_method]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>shipping_method</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>warehouse</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[warehouse]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>warehouse</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[delivery_days]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>delivery_days</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_delivery_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estimated_delivery_days]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>estimated_delivery_days</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[delivery_status]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>delivery_status</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[return_status]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>return_status</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>return_reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[return_reason]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>return_reason</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_rating]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_rating</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_sentiment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[review_sentiment]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>review_sentiment</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_review</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_review]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_review</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marketing_channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marketing_channel]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>marketing_channel</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[campaign_name]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>campaign_name</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coupon_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[coupon_code]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>coupon_code</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loyalty_points_earned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loyalty_points_earned]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>loyalty_points_earned</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>loyalty_points_redeemed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[loyalty_points_redeemed]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>loyalty_points_redeemed</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[quantity]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>quantity</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gross_sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gross_sales]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>gross_sales</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discount_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[discount_amount]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>discount_amount</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tax_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tax_amount]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>tax_amount</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[shipping_cost]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>shipping_cost</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_sales]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>net_sales</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_cost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[product_cost]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>product_cost</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[profit]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>profit</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit_margin_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[profit_margin_percentage]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>profit_margin_percentage</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_lifetime_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[customer_lifetime_value]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_lifetime_value</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_repeat_customer</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_repeat_customer]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>is_repeat_customer</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_order_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[customer_order_count]</local-name>
+            <parent-name>[ecommerce_sales_customer_analytics_150k.csv]</parent-name>
+            <remote-alias>customer_order_count</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Churn Risk Status' datatype='string' name='[Calculation_1765038688452608]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF DATEDIFF(&apos;day&apos;, {FIXED [customer_id] : MAX([order_date])}, TODAY()) &gt; 90 THEN &apos;Churned&apos;&#13;&#10;ELSEIF DATEDIFF(&apos;day&apos;, {FIXED [customer_id] : MAX([order_date])}, TODAY()) &gt;= 45 THEN &apos;At-Risk&apos;&#13;&#10;ELSE &apos;Active&apos;&#13;&#10;END' />
+      </column>
+      <column caption='customer_master.csv' datatype='table' name='[__tableau_internal_object_id__].[customer_master.csv_A29C147A367D450CB41C1CB57D2983A6]' role='measure' type='quantitative' />
+      <column caption='ecommerce_sales_customer_analytics_150k.csv' datatype='table' name='[__tableau_internal_object_id__].[ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F]' role='measure' type='quantitative' />
+      <column caption='Campaign Name' datatype='string' name='[campaign_name]' role='dimension' type='nominal' />
+      <column caption='Coupon Code' datatype='string' name='[coupon_code]' role='dimension' type='nominal' />
+      <column caption='Currency' datatype='string' name='[currency]' role='dimension' type='nominal' />
+      <column caption='Customer Acquisition Cost' datatype='real' name='[customer_acquisition_cost]' role='measure' type='quantitative' />
+      <column caption='Customer Age (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='integer' name='[customer_age (ecommerce_sales_customer_analytics_150k.csv)]' role='measure' type='quantitative' />
+      <column caption='Customer Age' datatype='integer' name='[customer_age]' role='measure' type='quantitative' />
+      <column caption='Customer City (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[customer_city (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer City' datatype='string' name='[customer_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Customer Country (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[customer_country (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Country' datatype='string' name='[customer_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Id (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[customer_id (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' type='nominal' />
+      <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+      <column caption='Customer Lifetime Value' datatype='real' name='[customer_lifetime_value]' role='measure' type='quantitative' />
+      <column caption='Customer Name (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[customer_name (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' type='nominal' />
+      <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+      <column caption='Customer Order Count' datatype='integer' name='[customer_order_count]' role='measure' type='quantitative' />
+      <column caption='Customer Postal Code (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='integer' name='[customer_postal_code (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' type='ordinal' />
+      <column caption='Customer Postal Code' datatype='integer' name='[customer_postal_code]' role='dimension' type='ordinal' />
+      <column caption='Customer Rating' datatype='real' name='[customer_rating]' role='measure' type='quantitative' />
+      <column caption='Customer Review' datatype='string' name='[customer_review]' role='dimension' type='nominal' />
+      <column caption='Customer Segment (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[customer_segment (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' type='nominal' />
+      <column caption='Customer Segment' datatype='string' name='[customer_segment]' role='dimension' type='nominal' />
+      <column caption='Customer State (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[customer_state (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Customer State' datatype='string' name='[customer_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Customer Type' datatype='string' name='[customer_type]' role='dimension' type='nominal' />
+      <column caption='Delivery Days' datatype='real' name='[delivery_days]' role='measure' type='quantitative' />
+      <column caption='Delivery Status' datatype='string' name='[delivery_status]' role='dimension' type='nominal' />
+      <column caption='Discount Amount' datatype='real' name='[discount_amount]' role='measure' type='quantitative' />
+      <column caption='Estimated Delivery Days' datatype='real' name='[estimated_delivery_days]' role='measure' type='quantitative' />
+      <column caption='Gender (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[gender (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Gross Sales' datatype='real' name='[gross_sales]' role='measure' type='quantitative' />
+      <column caption='Is Repeat Customer' datatype='boolean' name='[is_repeat_customer]' role='dimension' type='nominal' />
+      <column caption='Loyalty Points Earned' datatype='integer' name='[loyalty_points_earned]' role='measure' type='quantitative' />
+      <column caption='Loyalty Points Redeemed' datatype='integer' name='[loyalty_points_redeemed]' role='measure' type='quantitative' />
+      <column caption='Marketing Channel' datatype='string' name='[marketing_channel]' role='dimension' type='nominal' />
+      <column caption='Net Sales' datatype='real' name='[net_sales]' role='measure' type='quantitative' />
+      <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+      <column caption='Order Id' datatype='string' name='[order_id]' role='dimension' type='nominal' />
+      <column caption='Order Status' datatype='string' name='[order_status]' role='dimension' type='nominal' />
+      <column aggregation='Hour' caption='Order Time' datatype='datetime' name='[order_time]' role='dimension' type='ordinal' />
+      <column caption='Payment Method' datatype='string' name='[payment_method]' role='dimension' type='nominal' />
+      <column caption='Payment Status' datatype='string' name='[payment_status]' role='dimension' type='nominal' />
+      <column caption='Product Cost' datatype='real' name='[product_cost]' role='measure' type='quantitative' />
+      <column caption='Profit' datatype='real' name='[profit]' role='measure' type='quantitative' />
+      <column caption='Profit Margin Percentage' datatype='real' name='[profit_margin_percentage]' role='measure' type='quantitative' />
+      <column caption='Quantity' datatype='integer' name='[quantity]' role='measure' type='quantitative' />
+      <column caption='Region (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[region (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Return Reason' datatype='string' name='[return_reason]' role='dimension' type='nominal' />
+      <column caption='Return Status' datatype='string' name='[return_status]' role='dimension' type='nominal' />
+      <column caption='Review Sentiment' datatype='string' name='[review_sentiment]' role='dimension' type='nominal' />
+      <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+      <column caption='Shipping Cost' datatype='real' name='[shipping_cost]' role='measure' type='quantitative' />
+      <column caption='Shipping Method' datatype='string' name='[shipping_method]' role='dimension' type='nominal' />
+      <column caption='Tax Amount' datatype='real' name='[tax_amount]' role='measure' type='quantitative' />
+      <column caption='Warehouse' datatype='string' name='[warehouse]' role='dimension' type='nominal' />
+      <drill-paths>
+        <drill-path name='customer_country, customer_state, customer_city'>
+          <field>[customer_country]</field>
+          <field>[customer_state]</field>
+          <field>[customer_city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='customer_master.csv' id='customer_master.csv_A29C147A367D450CB41C1CB57D2983A6'>
+            <properties context=''>
+              <relation connection='textscan.1llo8230gk0n9j10g5zmu1nqfbno' name='customer_master.csv' table='[customer_master#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='customer_id' ordinal='0' />
+                  <column datatype='string' name='customer_name' ordinal='1' />
+                  <column datatype='integer' name='customer_age' ordinal='2' />
+                  <column datatype='string' name='gender' ordinal='3' />
+                  <column datatype='string' name='customer_segment' ordinal='4' />
+                  <column datatype='string' name='customer_city' ordinal='5' />
+                  <column datatype='string' name='customer_state' ordinal='6' />
+                  <column datatype='string' name='customer_country' ordinal='7' />
+                  <column datatype='string' name='region' ordinal='8' />
+                  <column datatype='integer' name='customer_postal_code' ordinal='9' />
+                  <column datatype='real' name='customer_acquisition_cost' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='ecommerce_sales_customer_analytics_150k.csv' id='ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F'>
+            <properties context=''>
+              <relation connection='textscan.0v5k92y1mssukt16v6kxp0mtdse4' name='ecommerce_sales_customer_analytics_150k.csv' table='[ecommerce_sales_customer_analytics_150k#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='order_id' ordinal='0' />
+                  <column datatype='date' name='order_date' ordinal='1' />
+                  <column datatype='datetime' name='order_time' ordinal='2' />
+                  <column datatype='string' name='order_status' ordinal='3' />
+                  <column datatype='string' name='sales_channel' ordinal='4' />
+                  <column datatype='string' name='customer_id' ordinal='5' />
+                  <column datatype='string' name='customer_name' ordinal='6' />
+                  <column datatype='integer' name='customer_age' ordinal='7' />
+                  <column datatype='string' name='gender' ordinal='8' />
+                  <column datatype='string' name='customer_segment' ordinal='9' />
+                  <column datatype='string' name='customer_type' ordinal='10' />
+                  <column datatype='string' name='customer_city' ordinal='11' />
+                  <column datatype='string' name='customer_state' ordinal='12' />
+                  <column datatype='string' name='customer_country' ordinal='13' />
+                  <column datatype='string' name='region' ordinal='14' />
+                  <column datatype='integer' name='customer_postal_code' ordinal='15' />
+                  <column datatype='string' name='payment_method' ordinal='16' />
+                  <column datatype='string' name='payment_status' ordinal='17' />
+                  <column datatype='string' name='currency' ordinal='18' />
+                  <column datatype='string' name='shipping_method' ordinal='19' />
+                  <column datatype='string' name='warehouse' ordinal='20' />
+                  <column datatype='real' name='delivery_days' ordinal='21' />
+                  <column datatype='real' name='estimated_delivery_days' ordinal='22' />
+                  <column datatype='string' name='delivery_status' ordinal='23' />
+                  <column datatype='string' name='return_status' ordinal='24' />
+                  <column datatype='string' name='return_reason' ordinal='25' />
+                  <column datatype='real' name='customer_rating' ordinal='26' />
+                  <column datatype='string' name='review_sentiment' ordinal='27' />
+                  <column datatype='string' name='customer_review' ordinal='28' />
+                  <column datatype='string' name='marketing_channel' ordinal='29' />
+                  <column datatype='string' name='campaign_name' ordinal='30' />
+                  <column datatype='string' name='coupon_code' ordinal='31' />
+                  <column datatype='integer' name='loyalty_points_earned' ordinal='32' />
+                  <column datatype='integer' name='loyalty_points_redeemed' ordinal='33' />
+                  <column datatype='integer' name='quantity' ordinal='34' />
+                  <column datatype='real' name='gross_sales' ordinal='35' />
+                  <column datatype='real' name='discount_amount' ordinal='36' />
+                  <column datatype='real' name='tax_amount' ordinal='37' />
+                  <column datatype='real' name='shipping_cost' ordinal='38' />
+                  <column datatype='real' name='net_sales' ordinal='39' />
+                  <column datatype='real' name='product_cost' ordinal='40' />
+                  <column datatype='real' name='profit' ordinal='41' />
+                  <column datatype='real' name='profit_margin_percentage' ordinal='42' />
+                  <column datatype='real' name='customer_lifetime_value' ordinal='43' />
+                  <column datatype='boolean' name='is_repeat_customer' ordinal='44' />
+                  <column datatype='integer' name='customer_order_count' ordinal='45' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[customer_id]' />
+              <expression op='[customer_id (ecommerce_sales_customer_analytics_150k.csv)]' />
+            </expression>
+            <first-end-point object-id='customer_master.csv_A29C147A367D450CB41C1CB57D2983A6' />
+            <second-end-point object-id='ecommerce_sales_customer_analytics_150k.csv_93D4E88FDD124722B99F6ED5700A8A7F' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Churn Risk'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_master.csv+ (Multiple Connections)' name='federated.0s818571o7bvya13k7rnt0b9wz3j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s818571o7bvya13k7rnt0b9wz3j'>
+            <column caption='Churn Risk Status' datatype='string' name='[Calculation_1765038688452608]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF DATEDIFF(&apos;day&apos;, {FIXED [customer_id] : MAX([order_date])}, TODAY()) &gt; 90 THEN &apos;Churned&apos;&#13;&#10;ELSEIF DATEDIFF(&apos;day&apos;, {FIXED [customer_id] : MAX([order_date])}, TODAY()) &gt;= 45 THEN &apos;At-Risk&apos;&#13;&#10;ELSE &apos;Active&apos;&#13;&#10;END' />
+            </column>
+            <column-instance column='[customer_id]' derivation='CountD' name='[ctd:customer_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1765038688452608]' derivation='None' name='[none:Calculation_1765038688452608:nk]' pivot='key' type='nominal' />
+            <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:Calculation_1765038688452608:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:Calculation_1765038688452608:nk]</rows>
+        <cols>[federated.0s818571o7bvya13k7rnt0b9wz3j].[ctd:customer_id:qk]</cols>
+      </table>
+      <simple-id uuid='{6F472865-3812-4B85-9B25-DA1C2B451D4C}' />
+    </worksheet>
+    <worksheet name='Sales by Channel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_master.csv+ (Multiple Connections)' name='federated.0s818571o7bvya13k7rnt0b9wz3j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s818571o7bvya13k7rnt0b9wz3j'>
+            <column caption='Gross Sales' datatype='real' name='[gross_sales]' role='measure' type='quantitative' />
+            <column-instance column='[sales_channel]' derivation='None' name='[none:sales_channel:nk]' pivot='key' type='nominal' />
+            <column caption='Sales Channel' datatype='string' name='[sales_channel]' role='dimension' type='nominal' />
+            <column-instance column='[gross_sales]' derivation='Sum' name='[sum:gross_sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:sales_channel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:sales_channel:nk]</rows>
+        <cols>[federated.0s818571o7bvya13k7rnt0b9wz3j].[sum:gross_sales:qk]</cols>
+      </table>
+      <simple-id uuid='{3A3CE33D-C94D-4F2E-880E-E2247704ED34}' />
+    </worksheet>
+    <worksheet name='Sales by Segment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='customer_master.csv+ (Multiple Connections)' name='federated.0s818571o7bvya13k7rnt0b9wz3j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s818571o7bvya13k7rnt0b9wz3j'>
+            <column caption='Customer Segment (Ecommerce Sales Customer Analytics 150K.Csv)' datatype='string' name='[customer_segment (ecommerce_sales_customer_analytics_150k.csv)]' role='dimension' type='nominal' />
+            <column caption='Gross Sales' datatype='real' name='[gross_sales]' role='measure' type='quantitative' />
+            <column-instance column='[customer_segment (ecommerce_sales_customer_analytics_150k.csv)]' derivation='None' name='[none:customer_segment (ecommerce_sales_customer_analytics_150k.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[gross_sales]' derivation='Sum' name='[sum:gross_sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:customer_segment (ecommerce_sales_customer_analytics_150k.csv):nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:customer_segment (ecommerce_sales_customer_analytics_150k.csv):nk]</rows>
+        <cols>[federated.0s818571o7bvya13k7rnt0b9wz3j].[sum:gross_sales:qk]</cols>
+      </table>
+      <simple-id uuid='{CD03A2B1-07BD-4447-8EA8-AE9098BEAD8A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49000' id='5' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='49000' id='3' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='21500' id='1' name='Churn Risk' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='27500' id='9' name='Sales by Channel' w='82400' x='800' y='22500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='49000' id='4' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8250' id='6' name='Churn Risk' pane-specification-id='0' param='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:Calculation_1765038688452608:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13250' id='8' name='Sales by Segment' pane-specification-id='0' param='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:customer_segment (ecommerce_sales_customer_analytics_150k.csv):nk]' type-v2='color' w='16000' x='83200' y='9250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13250' id='10' name='Sales by Channel' pane-specification-id='0' param='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:sales_channel:nk]' type-v2='color' w='16000' x='83200' y='22500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='30000' id='7' name='Sales by Segment' w='98400' x='800' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='19000' id='11' type-v2='text' w='98400' x='800' y='80000'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Retail Customer Churn &amp; Sales Analytics</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Project Overview:</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'> This dashboard correlates customer behavioral retention with financial performance metrics to identify revenue risks and channel effectiveness.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Churn Definition:</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'><![CDATA[ Active (<45 days since last order), At-Risk (45−90 days), and Churned (>90 days).]]></run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Key Insight:</run>
+              <run fontcolor='#000000' fontname='Benton Sans Book'> Monitor high-value segments (e.g., Consumer and Premium tiers) against dominant sales channels (Mobile App and Website) to prioritize targeted retention campaigns.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones />
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{230B2C4B-4920-4029-86FE-F568BDFE25F1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Churn Risk'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:Calculation_1765038688452608:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:Calculation_1765038688452608:nk]</field>
+            <field>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:customer_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{55EF14F3-5AFC-476E-89F6-84C46EC2D14A}' />
+    </window>
+    <window class='worksheet' name='Sales by Segment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:customer_segment (ecommerce_sales_customer_analytics_150k.csv):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:customer_segment (ecommerce_sales_customer_analytics_150k.csv):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{458DF2A9-7B61-4B92-AA99-7F82EA9DABEF}' />
+    </window>
+    <window class='worksheet' name='Sales by Channel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:sales_channel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:sales_channel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6663835D-9044-4F40-AD8F-88E9291FEFBF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Churn Risk'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:Calculation_1765038688452608:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sales by Channel'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:sales_channel:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sales by Segment'>
+          <highlight>
+            <color-one-way>
+              <field>[federated.0s818571o7bvya13k7rnt0b9wz3j].[none:customer_segment (ecommerce_sales_customer_analytics_150k.csv):nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{354A2851-E6A5-4A89-9874-84B6791DE582}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='119' name='Churn Risk' width='192'>
+      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
+      mnklQwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard' width='192'>
+      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
+      uhUAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='159' name='Sales by Channel' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='159' name='Sales by Segment' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
